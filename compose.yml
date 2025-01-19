@@ -7,13 +7,13 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
+      - .:/app:z
     depends_on:
       - postgres
     command: php -S 0.0.0.0:8000 -t public
 
   postgres:
-    image: postgres:16
+    image: postgres:17
     container_name: symfony_db
     environment:
       POSTGRES_USER: symfony
