@@ -1,5 +1,9 @@
 {
   "recommendations": [
     "bmewburn.vscode-intelephense-client",
+    "antfu.vite",
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
   ]
 }

@@ -23,6 +23,19 @@ services:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
+  
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/local/vite/Dockerfile
+    container_name: vue_app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app:z
+    command: sh -c "pnpm install && pnpm dev"
+    depends_on:
+      - symfony
 
 volumes:
   db_data:

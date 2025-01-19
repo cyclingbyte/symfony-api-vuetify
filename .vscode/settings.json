@@ -16,4 +16,12 @@
   "[json]": {
     "editor.tabSize": 2,
   },
+  "prettier.configPath": "./vue_frontend/.prettierrc.json",
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.trailingComma": "es5",
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.ignorePath": "./vue_frontend/.prettierignore"
 }
